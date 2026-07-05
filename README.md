@@ -2,13 +2,6 @@
 
 AMHS(Automated Material Handling System) 시뮬레이션 데이터를 이용해 병목 노드와 병목 엣지를 분석하는 과제용 MLOps 프로젝트입니다.
 
-이 레포는 과제 시연에 실제로 사용한 파일만 담았습니다.
-
-- Streamlit 병목 분석 대시보드
-- GAT 기반 병목 점수화 코드와 EC2용 경량 fallback
-- AMHS run CSV 데이터
-- OHT 3D FAB 시뮬레이션 뷰어
-- Docker/Kubernetes 배포 파일
 
 ## 빠른 실행
 
@@ -90,18 +83,3 @@ scripts/            로컬/EC2 실행 보조 스크립트
 deploy/nginx/       EC2 Nginx 프록시 예시 설정
 ```
 
-## GitHub 제출 제외 파일
-
-아래 파일과 폴더는 의도적으로 포함하지 않았습니다.
-
-- 로컬 과제 문서
-- 영상 촬영용 개인 문서
-- EC2 접속 키와 IP 메모
-- 로컬 가상환경과 캐시 파일
-
-## 검증된 기능
-
-- Streamlit 앱 health check
-- EC2 systemd + Nginx 프록시 배포
-- kind Kubernetes Deployment/Service/HPA 적용
-- 3D 시뮬레이션 iframe 렌더링
