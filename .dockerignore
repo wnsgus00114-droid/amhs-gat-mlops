@@ -1,0 +1,17 @@
+.git
+.DS_Store
+__pycache__/
+*.py[cod]
+
+venv/
+data/
+tableau_mlops/
+twbx/
+twbx.zip
+oht_3d/
+extracted_data/
+archive/
+*.ipynb
+
+outputs/*
+!outputs/fab_oht_blue_congestion_original_layout_1600x900_no_overlap_v3.gif

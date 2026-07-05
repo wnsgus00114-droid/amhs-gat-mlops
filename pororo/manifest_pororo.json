@@ -1,0 +1,420 @@
+{
+  "scenario": "pororo_resolved_bottleneck_view",
+  "source_dir": "/Users/baegjunhyeon/OHT/amhs/tableau_mlops/artifacts",
+  "output_dir": "/Users/baegjunhyeon/OHT/amhs/pororo",
+  "bottleneck_nodes_adjusted_count": 36,
+  "files": {
+    "node_activity": "/Users/baegjunhyeon/OHT/amhs/pororo/node_activity.csv",
+    "edge_activity": "/Users/baegjunhyeon/OHT/amhs/pororo/edge_activity.csv",
+    "run_summary": "/Users/baegjunhyeon/OHT/amhs/pororo/run_summary.csv",
+    "oht_edges": "/Users/baegjunhyeon/OHT/amhs/pororo/oht_edges.csv"
+  },
+  "rules": {
+    "node_activity": "bottleneck nodes reduced to ~50% with p60-based cap/floor",
+    "edge_activity": "edges touching bottleneck nodes scaled by 0.58",
+    "run_summary": "duration x0.76, oht_event_count x0.84, foup_event_count x0.93",
+    "oht_edges": "edge weight reduced on bottleneck-adjacent edges (both: x0.68, one-side: x0.78)"
+  },
+  "run_totals": {
+    "1": {
+      "before": 1589477,
+      "after": 1348296
+    },
+    "2": {
+      "before": 1603187,
+      "after": 1290636
+    },
+    "3": {
+      "before": 1589685,
+      "after": 1309441
+    },
+    "4": {
+      "before": 1570356,
+      "after": 1294069
+    },
+    "5": {
+      "before": 1598105,
+      "after": 1354144
+    },
+    "6": {
+      "before": 1578494,
+      "after": 1334513
+    },
+    "7": {
+      "before": 1569746,
+      "after": 1295608
+    },
+    "8": {
+      "before": 1600523,
+      "after": 1301908
+    },
+    "9": {
+      "before": 1578950,
+      "after": 1270667
+    },
+    "10": {
+      "before": 1576106,
+      "after": 1332512
+    },
+    "11": {
+      "before": 1577035,
+      "after": 1238261
+    },
+    "12": {
+      "before": 1574266,
+      "after": 1266848
+    },
+    "13": {
+      "before": 1578018,
+      "after": 1296795
+    },
+    "14": {
+      "before": 1618602,
+      "after": 1391322
+    },
+    "15": {
+      "before": 1615056,
+      "after": 1367372
+    },
+    "16": {
+      "before": 1605257,
+      "after": 1363603
+    },
+    "17": {
+      "before": 1585952,
+      "after": 1304424
+    },
+    "18": {
+      "before": 1585648,
+      "after": 1253067
+    },
+    "19": {
+      "before": 1582059,
+      "after": 1277934
+    },
+    "20": {
+      "before": 1573981,
+      "after": 1286865
+    },
+    "21": {
+      "before": 1591440,
+      "after": 1280946
+    },
+    "22": {
+      "before": 1617165,
+      "after": 1349280
+    },
+    "23": {
+      "before": 1585533,
+      "after": 1282237
+    },
+    "24": {
+      "before": 1614843,
+      "after": 1334959
+    },
+    "25": {
+      "before": 1574515,
+      "after": 1298352
+    },
+    "26": {
+      "before": 1659662,
+      "after": 1402535
+    },
+    "27": {
+      "before": 1664295,
+      "after": 1351281
+    },
+    "28": {
+      "before": 1643866,
+      "after": 1316640
+    },
+    "29": {
+      "before": 1619386,
+      "after": 1368969
+    },
+    "30": {
+      "before": 1653214,
+      "after": 1332929
+    },
+    "31": {
+      "before": 1651990,
+      "after": 1389840
+    },
+    "32": {
+      "before": 1619303,
+      "after": 1311297
+    },
+    "33": {
+      "before": 1632729,
+      "after": 1365793
+    },
+    "34": {
+      "before": 1643734,
+      "after": 1385868
+    },
+    "35": {
+      "before": 1645913,
+      "after": 1343162
+    },
+    "36": {
+      "before": 1648063,
+      "after": 1366558
+    },
+    "37": {
+      "before": 1648114,
+      "after": 1354226
+    },
+    "38": {
+      "before": 1637665,
+      "after": 1290189
+    },
+    "39": {
+      "before": 1678246,
+      "after": 1364218
+    },
+    "40": {
+      "before": 1647770,
+      "after": 1361469
+    },
+    "41": {
+      "before": 1677832,
+      "after": 1415442
+    },
+    "42": {
+      "before": 1641494,
+      "after": 1311658
+    },
+    "43": {
+      "before": 1640082,
+      "after": 1341924
+    },
+    "44": {
+      "before": 1640082,
+      "after": 1294302
+    },
+    "45": {
+      "before": 1675471,
+      "after": 1336433
+    },
+    "46": {
+      "before": 1678713,
+      "after": 1279456
+    },
+    "47": {
+      "before": 1640408,
+      "after": 1382892
+    },
+    "48": {
+      "before": 1641180,
+      "after": 1359488
+    },
+    "49": {
+      "before": 1609081,
+      "after": 1278265
+    },
+    "50": {
+      "before": 1603896,
+      "after": 1287324
+    },
+    "51": {
+      "before": 1696108,
+      "after": 1422223
+    },
+    "52": {
+      "before": 1690734,
+      "after": 1350340
+    },
+    "53": {
+      "before": 1746768,
+      "after": 1489999
+    },
+    "54": {
+      "before": 1710648,
+      "after": 1436190
+    },
+    "55": {
+      "before": 1705786,
+      "after": 1417134
+    },
+    "56": {
+      "before": 1726856,
+      "after": 1371313
+    },
+    "57": {
+      "before": 1754384,
+      "after": 1415185
+    },
+    "58": {
+      "before": 1693668,
+      "after": 1408909
+    },
+    "59": {
+      "before": 1698824,
+      "after": 1447541
+    },
+    "60": {
+      "before": 1751868,
+      "after": 1403081
+    },
+    "61": {
+      "before": 1722725,
+      "after": 1392339
+    },
+    "62": {
+      "before": 1703637,
+      "after": 1370257
+    },
+    "63": {
+      "before": 1745684,
+      "after": 1419557
+    },
+    "64": {
+      "before": 1687913,
+      "after": 1383615
+    },
+    "65": {
+      "before": 1718943,
+      "after": 1384177
+    },
+    "66": {
+      "before": 1722784,
+      "after": 1402634
+    },
+    "67": {
+      "before": 1703244,
+      "after": 1401288
+    },
+    "68": {
+      "before": 1724269,
+      "after": 1406340
+    },
+    "69": {
+      "before": 1677699,
+      "after": 1324908
+    },
+    "70": {
+      "before": 1727238,
+      "after": 1354086
+    },
+    "71": {
+      "before": 1695088,
+      "after": 1351074
+    },
+    "72": {
+      "before": 1733304,
+      "after": 1425867
+    },
+    "73": {
+      "before": 1675371,
+      "after": 1349423
+    },
+    "74": {
+      "before": 1757468,
+      "after": 1447495
+    },
+    "75": {
+      "before": 1705645,
+      "after": 1401302
+    },
+    "76": {
+      "before": 1764517,
+      "after": 1494326
+    },
+    "77": {
+      "before": 1787210,
+      "after": 1526552
+    },
+    "78": {
+      "before": 1762519,
+      "after": 1474677
+    },
+    "79": {
+      "before": 1753632,
+      "after": 1474294
+    },
+    "80": {
+      "before": 1765186,
+      "after": 1445748
+    },
+    "81": {
+      "before": 1766108,
+      "after": 1494122
+    },
+    "82": {
+      "before": 1740076,
+      "after": 1415134
+    },
+    "83": {
+      "before": 1805893,
+      "after": 1541871
+    },
+    "84": {
+      "before": 1728304,
+      "after": 1450476
+    },
+    "85": {
+      "before": 1795474,
+      "after": 1493583
+    },
+    "86": {
+      "before": 1787536,
+      "after": 1467896
+    },
+    "87": {
+      "before": 1789937,
+      "after": 1470829
+    },
+    "88": {
+      "before": 1759643,
+      "after": 1445456
+    },
+    "89": {
+      "before": 1780546,
+      "after": 1438809
+    },
+    "90": {
+      "before": 1748323,
+      "after": 1421307
+    },
+    "91": {
+      "before": 1803981,
+      "after": 1538872
+    },
+    "92": {
+      "before": 1737397,
+      "after": 1445243
+    },
+    "93": {
+      "before": 1796798,
+      "after": 1456642
+    },
+    "94": {
+      "before": 1751718,
+      "after": 1459219
+    },
+    "95": {
+      "before": 1781940,
+      "after": 1462889
+    },
+    "96": {
+      "before": 1734979,
+      "after": 1420956
+    },
+    "97": {
+      "before": 1822144,
+      "after": 1474000
+    },
+    "98": {
+      "before": 1725718,
+      "after": 1373516
+    },
+    "99": {
+      "before": 1822144,
+      "after": 1519598
+    },
+    "100": {
+      "before": 1754311,
+      "after": 1449186
+    }
+  }
+}

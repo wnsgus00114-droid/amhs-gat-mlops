@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amhs-gat-streamlit
+  namespace: amhs-mlops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amhs-gat-streamlit
+  template:
+    metadata:
+      labels:
+        app: amhs-gat-streamlit
+    spec:
+      containers:
+        - name: streamlit
+          image: amhs-gat-mlops:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8501
+          envFrom:
+            - configMapRef:
+                name: amhs-gat-config
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8501
+            initialDelaySeconds: 20
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8501
+            initialDelaySeconds: 40
+            periodSeconds: 20

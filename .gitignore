@@ -1,0 +1,18 @@
+# Local-only files
+과제 안내/
+과제안내.md
+대본/
+public_ip/
+key/
+*.pem
+*.key
+
+# Python/cache
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+.DS_Store
+
+# Local logs
+*.log
